@@ -5,8 +5,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
 
-  const API =
-    "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=e3e521b4b9ecd4c45a807a2036b3a3cb";
+  const BASE_API = "https://api.themoviedb.org/3";
+  const API_KEY = "&api_key=e3e521b4b9ecd4c45a807a2036b3a3cb";
+  const API = `${BASE_API}/discover/movie?with_genres=18&primary_release_year=2014${API_KEY}`;
 
   useEffect(() => {
     async function fetchData() {
