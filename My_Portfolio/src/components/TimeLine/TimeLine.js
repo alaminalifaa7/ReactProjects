@@ -67,8 +67,10 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I have been working as a business analyst but my passion for development
-        pushed me to self learn and build awesome applications
+        Hello! My name is Alif and I enjoy creating things that live on the
+        internet. My main focus these days is building accessible, inclusive
+        products and digital experiences at Upstatement for a variety of
+        clients.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
