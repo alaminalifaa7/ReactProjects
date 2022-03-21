@@ -1,9 +1,12 @@
 .App {
-  align-items: center;
   margin-left: 2em;
-}
-.App-header {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 .App-logo {
   width: 20em;
