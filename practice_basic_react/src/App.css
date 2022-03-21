@@ -1,11 +1,17 @@
 .App {
-  display: block;
   align-items: center;
   margin-left: 2em;
 }
-
+.App-header {
+  display: flex;
+}
 .App-logo {
   width: 20em;
 }
-.App-description {
+.nav-items {
+  display: flex;
+}
+.nav-items > li {
+  list-style: none;
+  padding: 10px;
 }
