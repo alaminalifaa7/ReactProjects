@@ -3,15 +3,9 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="App-header">
-      <nav className="nav">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ul className="nav-items">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+    <header className="header">
+      <img src={logo} className="header-logo" alt="logo" />
+      <h2 className="header-title"> Flight Search</h2>
     </header>
   );
 }

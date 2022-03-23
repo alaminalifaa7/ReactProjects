@@ -1,21 +1,18 @@
 import "./App.css";
-import Header from "./Header";
+import React, { useState } from "react";
+import data from "./data.js";
+import Flight from "./Flight";
 
 function App() {
+  const [flights, setFlights] = useState(data);
   return (
-    <div className="App">
-      <Header />
-      <section className="App-description">
-        <h1>Just Practicing afer a while</h1>
-        <ol>
-          <li>I have an assessment coming up</li>
-          <li>I like how slick react is!!</li>
-          <li>I get excited about learning and doing exciting stuff</li>
-        </ol>
+    <div className="container">
+      <h3>Flight Search Simulator</h3>
+      <section className="info">
+        {flights.map((flight, index) => {
+          return <Flight key={index} {...flight} />;
+        })}
       </section>
-      <footer>
-        <small>c 2022 development. All rights developed</small>
-      </footer>
     </div>
   );
 }
